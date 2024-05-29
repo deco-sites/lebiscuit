@@ -15,6 +15,6 @@ export const invoke = proxy<
   & ManifestShopify
   & ManifestWake
   & ManifestLinx
-  & ManifestNuvemshop 
+  & ManifestNuvemshop
   & ManifestCasaevideo
 >();

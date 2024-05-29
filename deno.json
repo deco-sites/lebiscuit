@@ -1,10 +1,10 @@
 {
   "imports": {
     "deco-sites/lebiscuit/": "./",
-    "$store/": "../casaevideo/",
-    "deco-sites/casaevideo/": "../casaevideo/",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.60.20/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.35.35/",
+    "$store/": "https://denopkg.com/wellingtonjr3873/casaevideo-deco/",
+    "deco-sites/casaevideo/": "https://denopkg.com/wellingtonjr3873/casaevideo-deco/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.69.6/",
+    "apps/": "https://denopkg.com/LelabsTeam/deco-apps/",
     "$fresh/": "https://deno.land/x/fresh@1.6.5/",
     "preact": "https://esm.sh/preact@10.19.6",
     "preact/": "https://esm.sh/preact@10.19.6/",

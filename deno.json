@@ -1,18 +1,22 @@
 {
   "imports": {
     "deco-sites/lebiscuit/": "./",
-
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.60.20/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.35.35/",
+    "$store/": "../casaevideo/",
+    "deco-sites/casaevideo/": "../casaevideo/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.75.1/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.47.7/",
     "$fresh/": "https://deno.land/x/fresh@1.6.5/",
-    "preact": "https://esm.sh/preact@10.19.2",
-    "preact/": "https://esm.sh/preact@10.19.2/",
+    "preact": "https://esm.sh/preact@10.19.6",
+    "preact/": "https://esm.sh/preact@10.19.6/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.2",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.1",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
-    "daisyui": "npm:daisyui@4.6.0"
+    "daisyui": "npm:daisyui@4.6.0",
+    "@sentry/react": "npm:@sentry/react@8.4.0",
+    "jsdom": "https://esm.sh/jsdom@24.1.0",
+    "dompurify": "https://esm.sh/dompurify@3.1.4"
   },
   "tasks": {
     "start": "deno task generate-icons && deno task bundle && deno run -A --unstable --env --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",

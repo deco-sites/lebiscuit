@@ -54,5 +54,5 @@ export const DEFAULT_THEME = {
   "--warning": "#F8D13A",
   "--warning-dark": "#BF9800",
   "--error-light": "#F2CBCC",
-  "--error": "#CF040A"
+  "--error": "#CF040A",
 };

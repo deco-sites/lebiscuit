@@ -2,8 +2,9 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$$$$$$0 from "./apps/casaevideo.ts";
+import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
+import * as $$$$$$$$$$$2 from "./apps/site.ts";
 import * as $$$2 from "./loaders/availableIcons.ts";
 import * as $$$3 from "./loaders/icons.ts";
 import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
@@ -101,8 +102,7 @@ const manifest = {
     "deco-sites/lebiscuit/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
     "deco-sites/lebiscuit/sections/Miscellaneous/Slide.tsx": $$$$$$33,
     "deco-sites/lebiscuit/sections/Newsletter/Newsletter.tsx": $$$$$$34,
-    "deco-sites/lebiscuit/sections/Product/ImageGalleryFrontBack.tsx":
-      $$$$$$35,
+    "deco-sites/lebiscuit/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$35,
     "deco-sites/lebiscuit/sections/Product/NotFound.tsx": $$$$$$36,
     "deco-sites/lebiscuit/sections/Product/NotFoundChallenge.tsx": $$$$$$37,
     "deco-sites/lebiscuit/sections/Product/ProductDetails.tsx": $$$$$$38,
@@ -116,8 +116,9 @@ const manifest = {
     "deco-sites/lebiscuit/sections/Theme/Theme.tsx": $$$$$$46,
   },
   "apps": {
-    "deco-sites/lebiscuit/apps/decohub.ts": $$$$$$$$$$$0,
-    "deco-sites/lebiscuit/apps/site.ts": $$$$$$$$$$$1,
+    "deco-sites/lebiscuit/apps/casaevideo.ts": $$$$$$$$$$$0,
+    "deco-sites/lebiscuit/apps/decohub.ts": $$$$$$$$$$$1,
+    "deco-sites/lebiscuit/apps/site.ts": $$$$$$$$$$$2,
   },
   "name": "deco-sites/lebiscuit",
   "baseUrl": import.meta.url,

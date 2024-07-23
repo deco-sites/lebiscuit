@@ -1,9 +1,8 @@
 {
   "imports": {
     "deco-sites/lebiscuit/": "./",
-
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.60.20/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.35.35/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.79.1/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.52.1/",
     "$fresh/": "https://deno.land/x/fresh@1.6.5/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
@@ -12,7 +11,12 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.0",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
-    "daisyui": "npm:daisyui@4.6.0"
+    "daisyui": "npm:daisyui@4.6.0",
+    "$store/": "https://denopkg.com/wellingtonjr3873/casaevideo-deco@2/",
+    "deco-sites/casaevideo/": "https://denopkg.com/wellingtonjr3873/casaevideo-deco@2/",
+    "@sentry/react": "npm:@sentry/react@8.4.0",
+    "jsdom": "https://esm.sh/jsdom@24.1.0",
+    "dompurify": "https://esm.sh/dompurify@3.1.4"
   },
   "tasks": {
     "start": "deno task generate-icons && deno task bundle && deno run -A --unstable --env --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",

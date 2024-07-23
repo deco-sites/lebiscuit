@@ -1,7 +1,7 @@
 import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import { Context } from "deco/deco.ts";
-import Theme from "../sections/Theme/Theme.tsx";
+import Theme from "deco-sites/casaevideo/sections/Theme/Theme.tsx";
 
 const sw = () =>
   addEventListener("load", () =>

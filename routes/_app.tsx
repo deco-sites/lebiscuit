@@ -9,11 +9,6 @@ const sw = () =>
     navigator.serviceWorker.register("/sw.js"));
 
 
-
-
-
-  
-
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   return (
@@ -31,10 +26,9 @@ export default defineApp(async (_req, ctx) => {
           href={asset(`/styles.css?revision=${revision}`)}
           rel="stylesheet"
         />
-        <link
-          href={`deco-sites/casaevideo/static/tailwind.css`}
-          rel="stylesheet"
-        />
+        <style>
+            {await fetch("http://denopkg.com/wellingtonjr3873/casaevideo-deco@4/static/tailwind.css").then((response) => response.text())};
+        </style>
 
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />

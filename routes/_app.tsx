@@ -2,15 +2,20 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import { Context } from "deco/deco.ts";
 import Theme from "deco-sites/casaevideo/sections/Theme/Theme.tsx";
-
+import Account from '../context.tsx'
 const sw = () =>
   addEventListener("load", () =>
     navigator && navigator.serviceWorker &&
     navigator.serviceWorker.register("/sw.js"));
 
+
+
+
+
+  
+
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
-
   return (
     <>
       {/* Include default fonts and css vars */}
@@ -26,13 +31,21 @@ export default defineApp(async (_req, ctx) => {
           href={asset(`/styles.css?revision=${revision}`)}
           rel="stylesheet"
         />
+        <link
+          href={`deco-sites/casaevideo/static/tailwind.css`}
+          rel="stylesheet"
+        />
 
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>
 
       {/* Rest of Preact tree */}
-      <ctx.Component />
+      <Account.Provider value={{
+        name: 'lebiscuit'
+       }}>
+           <ctx.Component />
+      </Account.Provider>
 
       {/* Include service worker */}
       <script

@@ -18,6 +18,7 @@ export type Props = {
    */
   platform: Platform;
   theme?: Section;
+  account: "lebiscuit" | "casaevideonewio";
 } & CommerceProps;
 
 export type Platform =

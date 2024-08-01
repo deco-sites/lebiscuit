@@ -2,7 +2,6 @@ import { SendEventOnView } from "../../components/Analytics.tsx";
 import { Layout as CardLayout } from "../../components/product/ProductCard.tsx";
 import Filters from "../../components/search/Filters.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import SearchControls from "../../islands/SearchControls.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import type { ProductListingPage } from "apps/commerce/types.ts";
@@ -54,7 +53,7 @@ function Result({
   page: ProductListingPage;
   url: string;
 }) {
-  const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const { products, filters, breadcrumb, pageInfo } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
   const url = new URL(_url);
 
@@ -71,13 +70,7 @@ function Result({
   return (
     <>
       <div class="container px-4 sm:py-10">
-        {(isFirstPage || !isPartial) && (
-          <SearchControls
-            sortOptions={sortOptions}
-            filters={filters}
-            breadcrumb={breadcrumb}
-            displayFilter={layout?.variant === "drawer"}
-          />
+        {(isFirstPage || !isPartial) && (<></>
         )}
 
         <div class="flex flex-row">

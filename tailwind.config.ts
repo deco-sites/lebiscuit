@@ -1,14 +1,13 @@
 import daisyui from "daisyui";
 import { DEFAULT_THEME } from "./styles/default_theme.ts";
 import { addOklchColor } from "./utils/addOklchColor.ts";
-
 export default {
   plugins: [daisyui],
   daisyui: {
     themes: [{
       light: DEFAULT_THEME,
     }],
-    logs: false,
+    logs: false,  
   },
   content: ["./**/*.tsx"],
   theme: {
@@ -16,6 +15,8 @@ export default {
     colors: {
       ...addOklchColor(DEFAULT_THEME),
       black: "black",
+      'grade-bg':  '#393939',
+      'grade': '#FFF200'
     },
     extend: {
       colors: {

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer base { 
 
   /* Allow changing font family via CMS */
   html {
